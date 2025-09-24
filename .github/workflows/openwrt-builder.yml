@@ -27,6 +27,40 @@ env:
   UPLOAD_FIRMWARE: true
   UPLOAD_RELEASE: true
   TZ: Asia/Shanghai
+  FEEDS_CONF_EXTRA: |
+        src-git passwall https://github.com/xiaorouji/openwrt-passwall.git
+        src-git passwall2 https://github.com/xiaorouji/openwrt-passwall2.git
+        src-git xray-core https://github.com/XTLS/Xray-core.git
+        src-git immortal_packages https://github.com/immortalwrt/packages.git
+  CUSTOM_PACKAGES: >
+        kmod-bonding
+        kmod-dsa
+        kmod-bridge
+        kmod-tun
+        kmod-ipt-core
+        kmod-ipt-nat
+        kmod-ipt-conntrack
+        ipset
+        iptables-mod-ipset
+        smartdns
+        chinadns-ng
+        pdnsd-alt
+        luci
+        luci-mod-network
+        luci-proto-bonding
+        luci-app-passwall
+        passwall
+        passwall-core
+        luci-i18n-passwall-zh-cn
+        xray-core
+        v2ray-core
+        trojan-go
+        curl
+        ca-certificates
+        jq
+        sqlite3
+        luci-app-opkg
+
 
 jobs:
   build:
