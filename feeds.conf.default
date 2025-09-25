@@ -6,6 +6,6 @@ src-git luci https://mirrors.tuna.tsinghua.edu.cn/openwrt/feed/luci.git;main
 
 # 第三方源（仅保留必要，避免冲突）
 src-git passwall_packages https://github.com/xiaorouji/openwrt-passwall-packages.git;main
-src-git passwall https://github.com/xiaorouji/openwrt-passwall.git;main
+src-git passwall_luci https://github.com/xiaorouji/openwrt-passwall.git;main
 src-git istore https://github.com/linkease/istore.git;main
 # src-git kenzok8 https://github.com/kenzok8/openwrt-packages.git  # 暂时注释，避免冲突
