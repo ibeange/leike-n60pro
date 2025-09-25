@@ -16,3 +16,8 @@
 # Add a feed source
 #echo 'src-git helloworld https://github.com/fw876/helloworld' >>feeds.conf.default
 #echo 'src-git passwall https://github.com/xiaorouji/openwrt-passwall' >>feeds.conf.default
+
+# 进入 feeds 目录，强制更新 PassWall 和 istore 源
+cd feeds/passwall_packages && git pull && cd -
+cd feeds/passwall && git pull && cd -
+cd feeds/istore && git pull && cd -
