@@ -1,10 +1,11 @@
-# 第三方核心源（按需求添加，确保名称唯一）
-src-git passwall_packages https://github.com/xiaorouji/openwrt-passwall-packages.git;main  # PassWall依赖包（名称：passwall_packages）
-src-git passwall https://github.com/xiaorouji/openwrt-passwall.git;main                   # PassWall主程序（名称：passwall，唯一）
-src-git istore https://github.com/linkease/istore.git;main                                 # iStore应用商店（名称：istore，唯一）
-src-git kenzok8 https://github.com/kenzok8/openwrt-packages.git                           # 常用插件集合（含微信推送等，名称：kenzok8，唯一）
-# 清华镜像源：开发版（main 分支，匹配官方 master 分支）
-src-git packages https://mirrors.tuna.tsinghua.edu.cn/git/openwrt/packages.git;main
-src-git luci https://mirrors.tuna.tsinghua.edu.cn/git/openwrt/luci.git;main
-src-git routing https://mirrors.tuna.tsinghua.edu.cn/git/openwrt/routing.git;main
-src-git telephony https://mirrors.tuna.tsinghua.edu.cn/git/openwrt/telephony.git;main 
+# 清华镜像源：开发版（main 分支，对应 OpenWrt main 源码）
+src-git packages https://mirrors.tuna.tsinghua.edu.cn/openwrt/feed/packages.git;main
+src-git luci https://mirrors.tuna.tsinghua.edu.cn/openwrt/feed/luci.git;main
+# src-git routing https://mirrors.tuna.tsinghua.edu.cn/openwrt/feed/routing.git;main  # 可选，注释
+# src-git telephony https://mirrors.tuna.tsinghua.edu.cn/openwrt/feed/telephony.git;main  # 可选，注释
+
+# 第三方源（仅保留必要，避免冲突）
+src-git passwall_packages https://github.com/xiaorouji/openwrt-passwall-packages.git;main
+src-git passwall https://github.com/xiaorouji/openwrt-passwall.git;main
+src-git istore https://github.com/linkease/istore.git;main
+# src-git kenzok8 https://github.com/kenzok8/openwrt-packages.git  # 暂时注释，避免冲突
