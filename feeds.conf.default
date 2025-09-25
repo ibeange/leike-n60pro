@@ -1,6 +1,6 @@
 # 清华镜像源：开发版（main 分支，对应 OpenWrt main 源码）
-src-git packages https://mirrors.tuna.tsinghua.edu.cn/openwrt/feed/packages.git;main
-src-git luci https://mirrors.tuna.tsinghua.edu.cn/openwrt/feed/luci.git;main
+# src-git packages https://mirrors.tuna.tsinghua.edu.cn/openwrt/feed/packages.git;main
+# src-git luci https://mirrors.tuna.tsinghua.edu.cn/openwrt/feed/luci.git;main
 # src-git routing https://mirrors.tuna.tsinghua.edu.cn/openwrt/feed/routing.git;main  # 可选，注释
 # src-git telephony https://mirrors.tuna.tsinghua.edu.cn/openwrt/feed/telephony.git;main  # 可选，注释
 
